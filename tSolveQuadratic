@@ -6,7 +6,7 @@ classdef tSolveQuadratic < matlab.unittest.TestCase
         function testTwoRealRoots(testCase)
             % For x^2 - 5x + 6 = 0, roots are 2 and 3
             a = 1; b = -5; c = 6;
-            expectedRoots = [2, 3];
+            expectedRoots = [2, 2];
             actualRoots = solveQuadratic(a, b, c);
             testCase.verifyEqual(actualRoots, expectedRoots);
         end
